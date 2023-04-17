@@ -1,0 +1,285 @@
+/* ------------------------------IMPORT----------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* -----------------------------ROOT------------------------- */
+
+:root{
+    ----body-color: #05292E;
+    ----Card-color: #072226;
+    ----Point-Color-Dead: #DB0708;
+    ----point-Color-Alive: #04A105;
+    ----description-color: #F8F8F8;
+    ----buttom-color: #71A821;
+    ----tittle-Color: #7CBA23;
+    ----info-color: #7E7E7E;
+    
+}
+
+/* ----------------------------------RESETS-------------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+input{
+    outline: 0;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+/* -------------------------------------------------INPUT--------------------------------------- */
+
+
+/* -----------------------------------HEADERCARD-------------------- */
+
+.img__header{
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.rick__and__morty{
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    position: relative;
+    width: 500px;
+    bottom: 250px;
+    
+}
+
+
+.location__info__resident{
+    background-color: var(----Card-color);
+    border-radius: 0.8em;
+    max-width: 500px;
+    max-height: 130px;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    
+
+    -webkit-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.name__location{
+    color: var(----tittle-Color);
+    font-size: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.info__location{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    
+}
+
+.defintion__location{
+
+color: var(----description-color);
+font-size: 13px;
+
+
+
+}
+
+.location__world{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.5em;
+font-size: 13px;
+color: var(----info-color);
+}
+
+
+/* ----------------------------------BODY------------------------ */
+
+body{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(----body-color);
+
+ 
+}
+
+.main__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4rem;
+    margin: 0.3rem;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/* ---------------------------------RESIDENTCARD---------------- */
+
+.resident__card{
+background-color: var(----Card-color);
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+max-width: 250px;
+min-width: 250px;
+text-align: start;
+margin-bottom: 2rem;
+-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+transition: transform 0.5s;
+}
+
+.resident__card:hover{
+    transform: scale(1.04);
+    }
+
+.resident__img{
+    border-radius: 10px 10px 0px 0px;
+    width: 250px;
+}
+
+.circle{
+    width: 15px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: #7E7E7E;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.Dead{
+    background-color: #DB0708;
+}
+.Alive{
+    background-color: #04A105;
+}
+
+
+.information__resident h3{
+text-align: center;
+color: var(----description-color);
+}
+
+.line{
+  border-color: var(----info-color);
+  width: 220px;
+  
+}
+
+.description__resident{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin: 0;
+    position: relative;
+    right: -15px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+
+}
+
+.definition__resident{
+    color: var(----info-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 10px;
+    
+}
+
+.information{
+    color: var(----description-color);
+    
+}
+
+.status__resident{
+background-color: var(----body-color);
+width: 100px;
+height: 25px;
+position: relative;
+top: -220px;
+border-radius: 0px 5px 5px 0px;
+
+}
+
+.status__span{
+    position: absolute;
+    left: 25px;
+    top: 0.7px;
+    font-size: 14px;
+    color: var(----description-color);
+    top: 3px;
+    
+}
+
+/* --------------------------INPUT--------------- */
+
+.form{
+border: none;
+display: flex;
+
+}
+
+.insertion{
+border: none;
+padding: 4px;
+border-radius: 5px 0px 0px 5px;
+font-size: 12px;
+width: 170px;
+height: 25px;
+
+}
+
+
+.button__submit{
+border: none;
+width: 70px;
+height: 25px;
+font-weight: 700;
+
+background-color: var(----buttom-color);
+color: var(----description-color);
+border-radius: 0px 5px 5px 0px;
+cursor: pointer;
+
+}
+
+button:hover{
+background-color: var(----tittle-Color);
+    
+    }
+
+
+
+/* --------------------------------MEDIA QUERY------------------ */
