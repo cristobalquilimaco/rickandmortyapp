@@ -5,7 +5,7 @@ const ResidentCard = ({ url }) => {
   
   const [resident] = UseFetch(url)
 
-  console.log(resident);
+
   
     return (
     <div className="resident__card">
